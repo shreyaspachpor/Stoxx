@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="Contact Us.css">
+    <script src="Contact Us.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="images\toxx-high-resolution-logo-homepage.png" alt="Logo" width="140px" height="99px" />
+        <div class="Navbar">
+            <li>
+            <li class="Explore">
+            <!-- <i class="gg-chart"></i> -->
+            <a href="#">Explore</a></li>
+            <li class="Home"><a href="#">Home</a></li>
+            <li class="Dashboard"><a href="#">Dashboard</a></li>
+            <li class="News"><a href="#">News</a></li>
+            <li class="Contact Us"><a href="Contact Us.html">Contact Us</a></li>
+            <li class="bell"><i class="fa fa-bell fa-lg"></i></li>
+        </div>
+    </div>
+    
+    <strong><h1 style="text-align: left; font-size: 40px;">Feedback Form </h1></strong>
+    <form name="form1">
+        <label for="name">Name :</label><br>
+        <input type="text" id="Name" name="Name" placeholder="Enter Full Name"><br><br>
+        <label for="email" >Email Address :</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter Email address"><br><br>
+        <label for="phone">Phone Number :</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter Phone number"><br><br>
+        <label for="gender">Gender :</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+        <label for="Reference">How did you get to know about us :</label><br>
+        <input type="checkbox" id="Newspaper" name="Newspaper" value="Newspaper">
+        <label for="Newspaper"> Newspaper</label><br>
+        <input type="checkbox" id="Social Media" name="Social Media" value="Social Media">
+        <label for="Social Media">Social Media</label><br>
+        <input type="checkbox" id="Word of mouth" name="Word of mouth" value="Word of mouth">
+        <label for="Word of mouth"> Word of mouth</label><br>
+        <input type="checkbox" id="Others" name="Others" value="Others">
+        <label for="Others"> Others </label><br><br>
+        <label for="suggestions">Suggestions :</label><br>
+        <textarea id="suggestions" name="suggestions" rows="10" cols="50" placeholder="Enter your suggestions here"></textarea><br><br>
+        <input type="submit" name="Submit" value="Submit" onclick="return emailcheck(document.form1.email),numbercheck(document.form1.phone);">
+    </form>
+</body>
+</html>
