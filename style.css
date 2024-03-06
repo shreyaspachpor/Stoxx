@@ -38,7 +38,7 @@ body{
 }
 
 .Navbar li:first-child {
-    margin-left: auto;
+    margin-left: 40px;
 }
 
 .Navbar a, .Navbar i {
