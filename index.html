@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href='https://unpkg.com/css.gg@2.0.0/icons/css/chart.css' >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="events.js"></script>
 
 </head>
 <body>
@@ -15,10 +16,11 @@
         <img src="images\toxx-high-resolution-logo-homepage.png" alt="Logo" width="140px" height="99px" />
         <div class="header">
             <div class="Navbar">
-                <li class="nav-item Home"><a href="#">Home</a></li>
-                <li class="nav-item Dashboard"><a href="#">Dashboard</a></li>
+                <li class="nav-item Explore"><a href="#">Explore</a></li>
+                <li class="nav-item Home"><a href="index.html">Home</a></li>
+                <li class="nav-item Portfolio" ><a href="Portfolio.html" onclick="displayMessage()">Portfolio</a></li>
                 <li class="nav-item News"><a href="#">News</a></li>
-                <li class="nav-item Contact Us"><a href="Contact Us.html">Contact Us</a></li>
+                <li class="nav-item Contact Us"><a href="Contact_Us.html">Contact Us</a></li>
             </div>
         </div>
     </div>
@@ -27,7 +29,7 @@
             <h1 class="hero-text">All things finance,<br>right here.</h1><br>
             <h2 class="secondary-text">Let's Stoxx.</h2>
             <div class="button-container">
-                <button class="bn632-hover bn26">Explore Now</button>
+                <button class="bn632-hover bn26" onclick="displayMessage()">Explore Now</button>
                 <button class="bn632-hover bn26">View Portfolio</button>
             </div>
             <div class="feature-list">

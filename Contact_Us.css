@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial;
-    background-color: #f4f4f4;
+    background-color: white;
     
 }
 
@@ -57,7 +57,7 @@ input[type="submit"]:hover {
     background-color: white;
     padding: 20px;
 }
-.Navbar {
+/* .Navbar {
     font-family: sans-serif;
     font-weight: 100;
     display: flex;
@@ -74,7 +74,7 @@ input[type="submit"]:hover {
 }
 
 .Navbar a:hover {
-    color: #FFD700;
+    color: #2f84ff;
 }
 
 .Dashboard {
@@ -92,7 +92,4 @@ ul {
     list-style: none;
 }
 
-.bell i{
-    margin-left: 45px;
-    
-}
+ */
