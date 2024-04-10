@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="icon" type="image/png" href="./images/toxx-high-resolution-logo.png"/>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/toxx-high-resolution-logo.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Portfolio.css" />
+  </head>
+  <body>
+    <div class="logo-header">
+      <img
+        src="images\toxx-high-resolution-logo-homepage.png"
+        alt="Logo"
+        width="140px"
+        height="99px"
+      />
+      <div class="header">
+        <div class="Navbar">
+          <li class="nav-item Explore"><a href="#">Explore</a></li>
+          <li class="nav-item Home"><a href="index.html">Home</a></li>
+          <li class="nav-item Portfolio">
+            <a href="Portfolio.html" onclick="displayMessage()">Portfolio</a>
+          </li>
+          <li class="nav-item News"><a href="#">News</a></li>
+          <li class="nav-item Contact Us">
+            <a href="Contact_Us.html">Contact Us</a>
+          </li>
+          <li class="nav-item Login">
+            <a href="login.html" class="login-button">Login/Signup</a>
+          </li>
+        </div>
+      </div>
+    </div>
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul class="links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Collection</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="links">
+            <li>
+              <a
+                href="https://eportal.incometax.gov.in/iec/foservices/#/TaxCalc/calculator"
+                target="_blank"
+                >Income Tax Calculator</a
+              >
+            </li>
+            <li><a href="#">Stoxx Digest</a></li>
+            <li><a href="#">Glossary</a></li>
+            <li><a href="#">Open Demat Account</a></li>
+            <li><a href="#">Calculator</a></li>
+            <li><a href="#">New Uploads</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="links">
+            <li><a href="#">Customer Agreement</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">GDPR</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Media Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter for a weekly dose of news, updates,
+            helpful tips, and exclusive offers.
+          </p>
+          <form action="#">
+            <input type="text" 
+            placeholder="Your email" required />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

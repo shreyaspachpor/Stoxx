@@ -27,12 +27,12 @@
             <th>Price</th>
             <th>Timestamp</th>
           </tr>
-          <xsl:for-each select="stocks/stock">
-            <tr>
-              <td><xsl:value-of select="symbol"/></td>
-              <td><xsl:value-of select="price"/></td>
-              <td><xsl:value-of select="timestamp"/></td>
-            </tr>
+          <xsl:for-each select="Market/stock">
+          <tr>
+          <td><xsl:value-of select="Name"/></td>
+          <td><xsl:value-of select="price"/></td>
+          <td><xsl:value-of select="timestamp"/></td>
+          </tr>
           </xsl:for-each>
         </table>
       </body>

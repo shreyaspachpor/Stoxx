@@ -1,29 +1,29 @@
-function validateInput(inputText, regex, errorMessage) {
-    inputText.onfocus = function() {
-        inputText.style.border = ''; 
-    };
-
-    if (inputText.value.match(regex)) {
-        return true;
-    } else {
-        alert(errorMessage);
-        inputText.focus();
-        inputText.style.border = '1px solid red'; 
-        return false;
-    }
+function emailcheck(inputText)
+{
+var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailFormat))
+{
+return true;
+}
+else
+{
+alert("Invalid Email address !!")
+inputText.focus();
+return false;
+}
 }
 
-function onSubmit(form) {
-    var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    var phoneFormat = /^\d{10}$/;
-
-    var emailValid = validateInput(form.email, emailFormat, "Invalid Email address !!");
-    var numberValid = validateInput(form.phone, phoneFormat, "Invalid Phone number !!");
-
-    if (emailValid && numberValid) {
-        alert("Form submitted successfully!");
-        return true; 
-    } else {
-        return false;
-    }
+function numbercheck(inputText)
+{
+var phoneno=/^\d{10}$/;
+if(inputText.value.match(phoneno))
+{
+return true
+}
+else
+{
+    alert("Invalid Phone number !!")
+    inputText.focus();
+    return false;
+}
 }

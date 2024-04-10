@@ -6,23 +6,24 @@
     <title>Feedback Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Contact_Us.css">
-    <script src="Contact Us.js"></script>
+    <script src="Contact_Us.js"></script>
 </head>
 <body>
-    <div class="header">
+    <div class="logo-header">
         <img src="images\toxx-high-resolution-logo-homepage.png" alt="Logo" width="140px" height="99px" />
-        
+        <div class="header">
             <div class="Navbar">
                 <li class="nav-item Explore"><a href="#">Explore</a></li>
                 <li class="nav-item Home"><a href="index.html">Home</a></li>
-                <li class="nav-item Dashboard"><a href="Portfolio.html">Portfolio</a></li>
+                <li class="nav-item Portfolio" ><a href="Portfolio.html" onclick="displayMessage()">Portfolio</a></li>
                 <li class="nav-item News"><a href="#">News</a></li>
                 <li class="nav-item Contact Us"><a href="Contact_Us.html">Contact Us</a></li>
             </div>
+        </div>
     </div>
     
     <strong><h1 style="text-align: left; font-size: 40px;">Feedback Form </h1></strong>
-    <form name="form1">
+    <form name="form">
         <label for="name">Name :</label><br>
         <input type="text" id="Name" name="Name" placeholder="Enter Full Name"><br><br>
         <label for="email" >Email Address :</label><br>
@@ -45,7 +46,7 @@
         <label for="Others"> Others </label><br><br>
         <label for="suggestions">Suggestions :</label><br>
         <textarea id="suggestions" name="suggestions" rows="10" cols="50" placeholder="Enter your suggestions here"></textarea><br><br>
-        <input type="submit" name="Submit" value="Submit" onclick="return emailcheck(document.form1.email),numbercheck(document.form1.phone);">
+        <input type="submit" name="Submit" value="Submit" onclick="return emailcheck(document.form.email),numbercheck(document.form.phone);">
     </form>
 </body>
 </html>
