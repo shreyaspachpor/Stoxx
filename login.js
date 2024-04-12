@@ -21,3 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.form').style.height = panelOne + 'px';
     });
 });
+
+document.getElementById("loginButton").addEventListener("click", function() {
+    window.location.href = "index.html"; // Redirects to index.html
+  });
+  

@@ -112,7 +112,7 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.form-group button {
+.login-link{
   outline: none;
   background: #2f84ff;
   width: 100%;
@@ -126,9 +126,28 @@ body {
   line-height: inherit;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.register-link{
+outline: none;
+background: #ffffff;
+width: 100%;
+border: 0;
+border-radius: 4px;
+padding: 12px 20px;
+color: #2f84ff;
+font-family: inherit;
+font-size: inherit;
+font-weight: 500;
+line-height: inherit;
+text-transform: uppercase;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
 }
 
-.form-group button:hover {
+.login-link:hover {
   background: #1a73e8;
 }
 
