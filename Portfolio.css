@@ -11,6 +11,17 @@
   .portfolio-hero th {
     background-color: #2f84ff;
     color: white;
+    
+  }
+  th:first-of-type {
+    border-radius: 5px 0 0 5px;
+  }
+  th:last-of-type {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .buy,.sell:hover {
+    opacity: 0.8; 
   }
   
   .portfolio-hero td, .portfolio-hero th {
@@ -27,12 +38,13 @@
   }
   
   .portfolio-hero .buy {
-    background-color: #2f84ff;
+    background-color: green;
     color: white;
     padding: 5px 10px;
     margin-right: 5px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   .portfolio-hero .sell {
@@ -41,6 +53,7 @@
     padding: 5px 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   .portfolio-hero .profit {
@@ -126,9 +139,7 @@
       clear: both;
   }
   
-  .cf {
-      *zoom: 1;
-  }
+  
   
   /* GENERAL STYLES */
   
